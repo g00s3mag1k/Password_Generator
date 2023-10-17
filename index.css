@@ -1,0 +1,57 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: #52b788;
+    overflow: hidden;
+}
+
+body section{
+    background: #f5f5f5;
+    width: 40%;
+    padding: 3vh 3vw;
+    text-align: left;
+    border-radius: 10px;
+}
+
+section h1{
+    font-size: 3vw;
+    text-align: center;
+}
+
+section>div>span{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 0.9vw;
+}
+
+section button{
+    font-size: 1.1vw;
+    background: #52b788;
+    outline: none;
+    border: 0.1vw solid #52b788;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+section>span{
+    border: 1px solid #52b788;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    margin: 5vh 0 0;
+}
+
+section>span>h2{
+    font-size: 1.1vw;
+    width: 80%;
+}
