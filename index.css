@@ -1,4 +1,4 @@
-body{
+body {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -8,7 +8,7 @@ body{
     overflow: hidden;
 }
 
-body section{
+body section {
     background: #f5f5f5;
     width: 40%;
     padding: 3vh 3vw;
@@ -16,23 +16,34 @@ body section{
     border-radius: 10px;
 }
 
-section h1{
-    font-size: 3vw;
+section h1 {
+    font-size: xx-large;
     text-align: center;
 }
 
-section>div>span{
+section>input[type="number"],
+section>input[type="number"]:focus {
+    border: 1px solid #52b788;
+    border-radius: 5px;
+    font-size: medium;
+    padding: 5px 10px;
+    width: 100%;
+    outline: none;
+}
+
+
+section>div>span {
     width: 80%;
     margin: auto;
     display: flex;
     gap: 5px;
     align-items: center;
     justify-content: flex-start;
-    font-size: 0.9vw;
+    font-size: medium;
 }
 
-section button{
-    font-size: 1.1vw;
+section button {
+    font-size: medium;
     background: #52b788;
     outline: none;
     border: 0.1vw solid #52b788;
@@ -41,17 +52,67 @@ section button{
     cursor: pointer;
 }
 
-section>span{
+section>span {
     border: 1px solid #52b788;
     border-radius: 5px;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     width: 100%;
+    padding: 10px 0;
     margin: 5vh 0 0;
 }
 
-section>span>h2{
-    font-size: 1.1vw;
+section>span>h2 {
+    font-size: large;
     width: 80%;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+@media screen and (min-width: 600px) and (max-width: 1024px) {
+    body section {
+        width: 50%;
+        padding: 10px 50px;
+    }
+
+    section>span>h2 {
+        font-size: medium;
+        width: 70%;
+    }
+}
+
+@media screen and (min-width: 0) and (max-width: 1600px) {
+    body section {
+        width: 100%;
+        padding: 10px 50px;
+    }
+
+    section h1 {
+        font-size: xx-large;
+        text-align: left;
+    }
+
+    section>div>span{
+        font-size: small;
+    }
+
+    section button {
+        font-size: small;
+    }
+
+    section>span>h2 {
+        font-size: small;
+        width: 70%;
+    }
 }
